@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		330B785018D6F15600BF7DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B784F18D6F15600BF7DF7 /* Foundation.framework */; };
+		330B785218D6F15600BF7DF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B785118D6F15600BF7DF7 /* CoreGraphics.framework */; };
+		330B785418D6F15600BF7DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B785318D6F15600BF7DF7 /* UIKit.framework */; };
+		330B785A18D6F15600BF7DF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330B785818D6F15600BF7DF7 /* InfoPlist.strings */; };
+		330B785C18D6F15600BF7DF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B785B18D6F15600BF7DF7 /* main.m */; };
+		330B786018D6F15600BF7DF7 /* APP_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B785F18D6F15600BF7DF7 /* APP_AppDelegate.m */; };
+		330B786318D6F15600BF7DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330B786118D6F15600BF7DF7 /* Main.storyboard */; };
+		330B786618D6F15600BF7DF7 /* APP_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B786518D6F15600BF7DF7 /* APP_ViewController.m */; };
+		330B786818D6F15600BF7DF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330B786718D6F15600BF7DF7 /* Images.xcassets */; };
+		330B786F18D6F15600BF7DF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B786E18D6F15600BF7DF7 /* XCTest.framework */; };
+		330B787018D6F15600BF7DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B784F18D6F15600BF7DF7 /* Foundation.framework */; };
+		330B787118D6F15600BF7DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B785318D6F15600BF7DF7 /* UIKit.framework */; };
+		330B787918D6F15600BF7DF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330B787718D6F15600BF7DF7 /* InfoPlist.strings */; };
+		330B787B18D6F15600BF7DF7 /* GooogleSignOnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B787A18D6F15600BF7DF7 /* GooogleSignOnTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		330B787218D6F15600BF7DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 330B784418D6F15600BF7DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330B784B18D6F15600BF7DF7;
+			remoteInfo = GooogleSignOn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		330B784C18D6F15600BF7DF7 /* GooogleSignOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooogleSignOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		330B784F18D6F15600BF7DF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		330B785118D6F15600BF7DF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		330B785318D6F15600BF7DF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		330B785718D6F15600BF7DF7 /* GooogleSignOn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GooogleSignOn-Info.plist"; sourceTree = "<group>"; };
+		330B785918D6F15600BF7DF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		330B785B18D6F15600BF7DF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		330B785D18D6F15600BF7DF7 /* GooogleSignOn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GooogleSignOn-Prefix.pch"; sourceTree = "<group>"; };
+		330B785E18D6F15600BF7DF7 /* APP_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APP_AppDelegate.h; sourceTree = "<group>"; };
+		330B785F18D6F15600BF7DF7 /* APP_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APP_AppDelegate.m; sourceTree = "<group>"; };
+		330B786218D6F15600BF7DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		330B786418D6F15600BF7DF7 /* APP_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APP_ViewController.h; sourceTree = "<group>"; };
+		330B786518D6F15600BF7DF7 /* APP_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APP_ViewController.m; sourceTree = "<group>"; };
+		330B786718D6F15600BF7DF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		330B786D18D6F15600BF7DF7 /* GooogleSignOnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooogleSignOnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		330B786E18D6F15600BF7DF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		330B787618D6F15600BF7DF7 /* GooogleSignOnTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GooogleSignOnTests-Info.plist"; sourceTree = "<group>"; };
+		330B787818D6F15600BF7DF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		330B787A18D6F15600BF7DF7 /* GooogleSignOnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooogleSignOnTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		330B784918D6F15600BF7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B785218D6F15600BF7DF7 /* CoreGraphics.framework in Frameworks */,
+				330B785418D6F15600BF7DF7 /* UIKit.framework in Frameworks */,
+				330B785018D6F15600BF7DF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330B786A18D6F15600BF7DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B786F18D6F15600BF7DF7 /* XCTest.framework in Frameworks */,
+				330B787118D6F15600BF7DF7 /* UIKit.framework in Frameworks */,
+				330B787018D6F15600BF7DF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		330B784318D6F15600BF7DF7 = {
+			isa = PBXGroup;
+			children = (
+				330B785518D6F15600BF7DF7 /* GooogleSignOn */,
+				330B787418D6F15600BF7DF7 /* GooogleSignOnTests */,
+				330B784E18D6F15600BF7DF7 /* Frameworks */,
+				330B784D18D6F15600BF7DF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		330B784D18D6F15600BF7DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				330B784C18D6F15600BF7DF7 /* GooogleSignOn.app */,
+				330B786D18D6F15600BF7DF7 /* GooogleSignOnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		330B784E18D6F15600BF7DF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330B784F18D6F15600BF7DF7 /* Foundation.framework */,
+				330B785118D6F15600BF7DF7 /* CoreGraphics.framework */,
+				330B785318D6F15600BF7DF7 /* UIKit.framework */,
+				330B786E18D6F15600BF7DF7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		330B785518D6F15600BF7DF7 /* GooogleSignOn */ = {
+			isa = PBXGroup;
+			children = (
+				330B785E18D6F15600BF7DF7 /* APP_AppDelegate.h */,
+				330B785F18D6F15600BF7DF7 /* APP_AppDelegate.m */,
+				330B786118D6F15600BF7DF7 /* Main.storyboard */,
+				330B786418D6F15600BF7DF7 /* APP_ViewController.h */,
+				330B786518D6F15600BF7DF7 /* APP_ViewController.m */,
+				330B786718D6F15600BF7DF7 /* Images.xcassets */,
+				330B785618D6F15600BF7DF7 /* Supporting Files */,
+			);
+			path = GooogleSignOn;
+			sourceTree = "<group>";
+		};
+		330B785618D6F15600BF7DF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				330B785718D6F15600BF7DF7 /* GooogleSignOn-Info.plist */,
+				330B785818D6F15600BF7DF7 /* InfoPlist.strings */,
+				330B785B18D6F15600BF7DF7 /* main.m */,
+				330B785D18D6F15600BF7DF7 /* GooogleSignOn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		330B787418D6F15600BF7DF7 /* GooogleSignOnTests */ = {
+			isa = PBXGroup;
+			children = (
+				330B787A18D6F15600BF7DF7 /* GooogleSignOnTests.m */,
+				330B787518D6F15600BF7DF7 /* Supporting Files */,
+			);
+			path = GooogleSignOnTests;
+			sourceTree = "<group>";
+		};
+		330B787518D6F15600BF7DF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				330B787618D6F15600BF7DF7 /* GooogleSignOnTests-Info.plist */,
+				330B787718D6F15600BF7DF7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		330B784B18D6F15600BF7DF7 /* GooogleSignOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330B787E18D6F15600BF7DF7 /* Build configuration list for PBXNativeTarget "GooogleSignOn" */;
+			buildPhases = (
+				330B784818D6F15600BF7DF7 /* Sources */,
+				330B784918D6F15600BF7DF7 /* Frameworks */,
+				330B784A18D6F15600BF7DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooogleSignOn;
+			productName = GooogleSignOn;
+			productReference = 330B784C18D6F15600BF7DF7 /* GooogleSignOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		330B786C18D6F15600BF7DF7 /* GooogleSignOnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330B788118D6F15600BF7DF7 /* Build configuration list for PBXNativeTarget "GooogleSignOnTests" */;
+			buildPhases = (
+				330B786918D6F15600BF7DF7 /* Sources */,
+				330B786A18D6F15600BF7DF7 /* Frameworks */,
+				330B786B18D6F15600BF7DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330B787318D6F15600BF7DF7 /* PBXTargetDependency */,
+			);
+			name = GooogleSignOnTests;
+			productName = GooogleSignOnTests;
+			productReference = 330B786D18D6F15600BF7DF7 /* GooogleSignOnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		330B784418D6F15600BF7DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = APP_;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Hackintosh 01";
+				TargetAttributes = {
+					330B786C18D6F15600BF7DF7 = {
+						TestTargetID = 330B784B18D6F15600BF7DF7;
+					};
+				};
+			};
+			buildConfigurationList = 330B784718D6F15600BF7DF7 /* Build configuration list for PBXProject "GooogleSignOn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 330B784318D6F15600BF7DF7;
+			productRefGroup = 330B784D18D6F15600BF7DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				330B784B18D6F15600BF7DF7 /* GooogleSignOn */,
+				330B786C18D6F15600BF7DF7 /* GooogleSignOnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		330B784A18D6F15600BF7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B786818D6F15600BF7DF7 /* Images.xcassets in Resources */,
+				330B785A18D6F15600BF7DF7 /* InfoPlist.strings in Resources */,
+				330B786318D6F15600BF7DF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330B786B18D6F15600BF7DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B787918D6F15600BF7DF7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		330B784818D6F15600BF7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B786618D6F15600BF7DF7 /* APP_ViewController.m in Sources */,
+				330B786018D6F15600BF7DF7 /* APP_AppDelegate.m in Sources */,
+				330B785C18D6F15600BF7DF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330B786918D6F15600BF7DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330B787B18D6F15600BF7DF7 /* GooogleSignOnTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		330B787318D6F15600BF7DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330B784B18D6F15600BF7DF7 /* GooogleSignOn */;
+			targetProxy = 330B787218D6F15600BF7DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		330B785818D6F15600BF7DF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330B785918D6F15600BF7DF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		330B786118D6F15600BF7DF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330B786218D6F15600BF7DF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		330B787718D6F15600BF7DF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330B787818D6F15600BF7DF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		330B787C18D6F15600BF7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		330B787D18D6F15600BF7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		330B787F18D6F15600BF7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
+				INFOPLIST_FILE = "GooogleSignOn/GooogleSignOn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		330B788018D6F15600BF7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
+				INFOPLIST_FILE = "GooogleSignOn/GooogleSignOn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		330B788218D6F15600BF7DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GooogleSignOn.app/GooogleSignOn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GooogleSignOnTests/GooogleSignOnTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		330B788318D6F15600BF7DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GooogleSignOn.app/GooogleSignOn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
+				INFOPLIST_FILE = "GooogleSignOnTests/GooogleSignOnTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		330B784718D6F15600BF7DF7 /* Build configuration list for PBXProject "GooogleSignOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330B787C18D6F15600BF7DF7 /* Debug */,
+				330B787D18D6F15600BF7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330B787E18D6F15600BF7DF7 /* Build configuration list for PBXNativeTarget "GooogleSignOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330B787F18D6F15600BF7DF7 /* Debug */,
+				330B788018D6F15600BF7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		330B788118D6F15600BF7DF7 /* Build configuration list for PBXNativeTarget "GooogleSignOnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330B788218D6F15600BF7DF7 /* Debug */,
+				330B788318D6F15600BF7DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 330B784418D6F15600BF7DF7 /* Project object */;
+}
