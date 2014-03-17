@@ -7,8 +7,15 @@
 //
 
 #import "APP_AppDelegate.h"
+#import <GooglePlus/GooglePlus.h>
 
 @implementation APP_AppDelegate
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [GPPURLHandler handleURL:url
+                  sourceApplication:sourceApplication
+                         annotation:annotation];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

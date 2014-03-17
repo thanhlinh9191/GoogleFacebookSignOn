@@ -21,6 +21,16 @@
 		330B787118D6F15600BF7DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B785318D6F15600BF7DF7 /* UIKit.framework */; };
 		330B787918D6F15600BF7DF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330B787718D6F15600BF7DF7 /* InfoPlist.strings */; };
 		330B787B18D6F15600BF7DF7 /* GooogleSignOnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B787A18D6F15600BF7DF7 /* GooogleSignOnTests.m */; };
+		330B788718D6F1EB00BF7DF7 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B788418D6F1EB00BF7DF7 /* GoogleOpenSource.framework */; };
+		330B788918D6F1EB00BF7DF7 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B788618D6F1EB00BF7DF7 /* GooglePlus.framework */; };
+		330B788B18D6FA7100BF7DF7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B788A18D6FA7100BF7DF7 /* AddressBook.framework */; };
+		330B788D18D6FA8000BF7DF7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B788C18D6FA8000BF7DF7 /* AssetsLibrary.framework */; };
+		330B788F18D6FAA200BF7DF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B788E18D6FAA200BF7DF7 /* CoreLocation.framework */; };
+		330B789118D6FAA800BF7DF7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789018D6FAA800BF7DF7 /* CoreMotion.framework */; };
+		330B789318D6FAAE00BF7DF7 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789218D6FAAE00BF7DF7 /* CoreText.framework */; };
+		330B789518D6FAC400BF7DF7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */; };
+		330B789718D6FAE100BF7DF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789618D6FAE100BF7DF7 /* Security.framework */; };
+		330B789918D6FAE800BF7DF7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,17 @@
 		330B787618D6F15600BF7DF7 /* GooogleSignOnTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GooogleSignOnTests-Info.plist"; sourceTree = "<group>"; };
 		330B787818D6F15600BF7DF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		330B787A18D6F15600BF7DF7 /* GooogleSignOnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooogleSignOnTests.m; sourceTree = "<group>"; };
+		330B788418D6F1EB00BF7DF7 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../Downloads/google-plus-ios-sdk-1.5.0/GoogleOpenSource.framework"; sourceTree = "<group>"; };
+		330B788518D6F1EB00BF7DF7 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../../Downloads/google-plus-ios-sdk-1.5.0/GooglePlus.bundle"; sourceTree = "<group>"; };
+		330B788618D6F1EB00BF7DF7 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = "../../../Downloads/google-plus-ios-sdk-1.5.0/GooglePlus.framework"; sourceTree = "<group>"; };
+		330B788A18D6FA7100BF7DF7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		330B788C18D6FA8000BF7DF7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		330B788E18D6FAA200BF7DF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		330B789018D6FAA800BF7DF7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		330B789218D6FAAE00BF7DF7 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		330B789618D6FAE100BF7DF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330B789918D6FAE800BF7DF7 /* SystemConfiguration.framework in Frameworks */,
+				330B789718D6FAE100BF7DF7 /* Security.framework in Frameworks */,
+				330B789518D6FAC400BF7DF7 /* MediaPlayer.framework in Frameworks */,
+				330B789318D6FAAE00BF7DF7 /* CoreText.framework in Frameworks */,
+				330B789118D6FAA800BF7DF7 /* CoreMotion.framework in Frameworks */,
+				330B788F18D6FAA200BF7DF7 /* CoreLocation.framework in Frameworks */,
+				330B788D18D6FA8000BF7DF7 /* AssetsLibrary.framework in Frameworks */,
+				330B788B18D6FA7100BF7DF7 /* AddressBook.framework in Frameworks */,
+				330B788718D6F1EB00BF7DF7 /* GoogleOpenSource.framework in Frameworks */,
+				330B788918D6F1EB00BF7DF7 /* GooglePlus.framework in Frameworks */,
 				330B785218D6F15600BF7DF7 /* CoreGraphics.framework in Frameworks */,
 				330B785418D6F15600BF7DF7 /* UIKit.framework in Frameworks */,
 				330B785018D6F15600BF7DF7 /* Foundation.framework in Frameworks */,
@@ -101,6 +132,17 @@
 		330B784E18D6F15600BF7DF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */,
+				330B789618D6FAE100BF7DF7 /* Security.framework */,
+				330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */,
+				330B789218D6FAAE00BF7DF7 /* CoreText.framework */,
+				330B789018D6FAA800BF7DF7 /* CoreMotion.framework */,
+				330B788E18D6FAA200BF7DF7 /* CoreLocation.framework */,
+				330B788C18D6FA8000BF7DF7 /* AssetsLibrary.framework */,
+				330B788A18D6FA7100BF7DF7 /* AddressBook.framework */,
+				330B788418D6F1EB00BF7DF7 /* GoogleOpenSource.framework */,
+				330B788518D6F1EB00BF7DF7 /* GooglePlus.bundle */,
+				330B788618D6F1EB00BF7DF7 /* GooglePlus.framework */,
 				330B784F18D6F15600BF7DF7 /* Foundation.framework */,
 				330B785118D6F15600BF7DF7 /* CoreGraphics.framework */,
 				330B785318D6F15600BF7DF7 /* UIKit.framework */,
@@ -377,9 +419,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hackintosh01/Downloads/google-plus-ios-sdk-1.5.0",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
 				INFOPLIST_FILE = "GooogleSignOn/GooogleSignOn-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,9 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/hackintosh01/Downloads/google-plus-ios-sdk-1.5.0",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
 				INFOPLIST_FILE = "GooogleSignOn/GooogleSignOn-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
