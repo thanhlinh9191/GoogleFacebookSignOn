@@ -7,6 +7,7 @@
 //
 
 #import "APP_ViewController.h"
+#import "APP_AppDelegate.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
 
 @interface APP_ViewController ()
@@ -18,25 +19,54 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// client id tu google
      static NSString * const kClientId = @"424751579052-5ad40lnmofu2miqiovl6i06ba73gt0p7.apps.googleusercontent.com";
     
     GPPSignIn *signIn = [GPPSignIn sharedInstance];
     signIn.shouldFetchGooglePlusUser = YES;
     //signIn.shouldFetchGoogleUserEmail = YES;  // Uncomment to get the user's email
     
-    // You previously set kClientId in the "Initialize the Google+ client" step
+    // set client id tu google +
     signIn.clientID = kClientId;
     
-    // Uncomment one of these two statements for the scope you chose in the previous step
+    // chon scope : gooogle plus
     signIn.scopes = @[ kGTLAuthScopePlusLogin ];  // "https://www.googleapis.com/auth/plus.login" scope
     //signIn.scopes = @[ @"profile" ];            // "profile" scope
     
-    // Optional: declare signIn.actions, see "app activities"
+    // dung delegate
     signIn.delegate = self;
     
-    //tu dong login
-   // [signIn trySilentAuthentication];
+    //tu dong login neu can
+    //[signIn trySilentAuthentication];
+    //[self.btnGoogle setTitle:@"Logout Google" forState:UIControlStateNormal];
+    
+    //set text for twGoogleStatus
+    [self.twGoogleStatus setText:@"Login to create a link to fetch account data"];
+    
+    
+    [[GPPSignIn sharedInstance] authenticate];
+    [[GPPSignIn sharedInstance] SET];
+    
+    //THIS PART FOR FACEBOOK APP
+    [self updateView];
+    
+    APP_AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    if (!appDelegate.session.isOpen) {
+        // tao doi tuong session moi
+        appDelegate.session = [[FBSession alloc] init];
+        
+        if (appDelegate.session.state == FBSessionStateCreatedTokenLoaded)
+        {
+            // even though we had a cached token, we need to login to make the session usable
+            [appDelegate.session openWithCompletionHandler:^(FBSession *session,
+                                                             FBSessionState status,
+                                                             NSError *error) {
+                // we recurse here, in order to update buttons and labels
+                [self updateView];
+            }];
+        }
+    }
+
 }
 
 
@@ -45,48 +75,81 @@
     if (error) {
         // Do some error handling here.
     } else {
-        [self refreshInterfaceBasedOnSignIn];
         //view token status
-        [self.twStatus setText:[NSString stringWithFormat:@"access token: %@",auth.accessToken]];
+        [self.twGoogleStatus setText:[NSString stringWithFormat:@"Google access token: %@",auth.accessToken]];
         //tien hanh signout
        // [self signOut];
     }
 }
 
-
-//thuc hien khi login thanh cong
--(void)refreshInterfaceBasedOnSignIn
-{
-    if ([[GPPSignIn sharedInstance] authentication]) {
-        // The user is signed in.
-        self.signInButton.hidden = YES;
-        // Perform other actions here, such as showing a sign-out button
-        
-    } else {
-        self.signInButton.hidden = NO;
-        // Perform other actions here
-    }
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)signOut {
-    [[GPPSignIn sharedInstance] signOut];
-}
-- (void)disconnect {
-    [[GPPSignIn sharedInstance] disconnect];
-}
-
 - (void)didDisconnectWithError:(NSError *)error {
     if (error) {
         NSLog(@"Received error %@", error);
     } else {
-        // The user is signed out and disconnected.
-        // Clean up user data as specified by the Google+ terms.
+          NSLog(@"Disconnect Google Successful");
     }
 }
 
+//update view for facebook satus
+-(void) updateView {
+    
+    // get the app delegate, so that we can reference the session property
+    APP_AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    if (appDelegate.session.isOpen) {
+        [self.btnFaceBook setTitle:@"Log out FaceBook" forState:UIControlStateNormal];
+        [self.twFaceBookStatus setText:[NSString stringWithFormat:@"https://graph.facebook.com/me/friends?access_token=%@",
+                                appDelegate.session.accessTokenData.accessToken]];
+    } else {
+        [self.btnFaceBook setTitle:@"Log in With FaceBook" forState:UIControlStateNormal];
+        [self.twFaceBookStatus setText:@"Login to create a link to fetch account data"];
+    }
+    
+    
+}
+
+- (IBAction)clickLoginGoogle:(id)sender {
+    
+    if([[GPPSignIn sharedInstance] authentication ]) {
+           [[GPPSignIn sharedInstance] disconnect];
+        [self.btnGoogle setTitle:@"Login With Google" forState:UIControlStateNormal];
+       [self.twGoogleStatus setText:@"Login to create a link to fetch account data"];
+        
+    }
+    else{
+        
+        [[GPPSignIn sharedInstance] authenticate];
+          [self.btnGoogle setTitle:@"Logout Google" forState:UIControlStateNormal];
+    }
+}
+- (IBAction)clickLoginFaceBook:(id)sender {
+    // get delegate cua app de tiep can doi tuong session
+    APP_AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+    
+    // button la flip-flop, open-close
+    if (appDelegate.session.isOpen) {
+        //xoa session
+       [appDelegate.session closeAndClearTokenInformation];
+              
+    } else {
+        if (appDelegate.session.state != FBSessionStateCreated) {
+            // tao session moi
+            appDelegate.session = [[FBSession alloc] init];
+        }
+        
+        //  moi UI login
+        [appDelegate.session openWithCompletionHandler:^(FBSession *session,
+                                                         FBSessionState status,
+                                                         NSError *error) {
+            // cap nhat lại view
+            [self updateView];
+        }];
+    }
+
+}
 @end

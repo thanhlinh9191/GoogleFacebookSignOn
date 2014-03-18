@@ -12,7 +12,17 @@
 @implementation APP_AppDelegate
 
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [GPPURLHandler handleURL:url
+    
+    NSLog(@" url is :%@",url);
+    
+    NSString *urlString = [url absoluteString];
+    
+    if ([urlString rangeOfString:@"facebook"].location != NSNotFound){
+        return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:self.session];
+        
+    }
+    else
+     return [GPPURLHandler handleURL:url
                   sourceApplication:sourceApplication
                          annotation:annotation];
 }
@@ -43,6 +53,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActiveWithSession:self.session];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

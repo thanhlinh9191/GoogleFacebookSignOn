@@ -31,6 +31,7 @@
 		330B789518D6FAC400BF7DF7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */; };
 		330B789718D6FAE100BF7DF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789618D6FAE100BF7DF7 /* Security.framework */; };
 		330B789918D6FAE800BF7DF7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */; };
+		33EA608018D7E4060062FEA1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EA607F18D7E4060062FEA1 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		330B789618D6FAE100BF7DF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		33EA607F18D7E4060062FEA1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EA608018D7E4060062FEA1 /* FacebookSDK.framework in Frameworks */,
 				330B789918D6FAE800BF7DF7 /* SystemConfiguration.framework in Frameworks */,
 				330B789718D6FAE100BF7DF7 /* Security.framework in Frameworks */,
 				330B789518D6FAC400BF7DF7 /* MediaPlayer.framework in Frameworks */,
@@ -132,6 +135,7 @@
 		330B784E18D6F15600BF7DF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33EA607F18D7E4060062FEA1 /* FacebookSDK.framework */,
 				330B789818D6FAE800BF7DF7 /* SystemConfiguration.framework */,
 				330B789618D6FAE100BF7DF7 /* Security.framework */,
 				330B789418D6FAC400BF7DF7 /* MediaPlayer.framework */,
@@ -422,6 +426,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hackintosh01/Downloads/google-plus-ios-sdk-1.5.0",
+					/Users/hackintosh01/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
@@ -440,6 +445,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/hackintosh01/Downloads/google-plus-ios-sdk-1.5.0",
+					/Users/hackintosh01/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooogleSignOn/GooogleSignOn-Prefix.pch";
@@ -509,6 +515,7 @@
 				330B788018D6F15600BF7DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		330B788118D6F15600BF7DF7 /* Build configuration list for PBXNativeTarget "GooogleSignOnTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				330B788318D6F15600BF7DF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

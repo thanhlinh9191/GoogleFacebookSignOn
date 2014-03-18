@@ -29,6 +29,12 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb380615018626574</string>
+			</array>
+		</dict>
+		<dict>
 			<key>CFBundleURLName</key>
 			<string>com.thanhlinh9191.GooogleSignOn</string>
 			<key>CFBundleURLSchemes</key>
@@ -37,6 +43,10 @@
 			</array>
 		</dict>
 	</array>
+	<key>FacebookAppID</key>
+	<string>380615018626574</string>
+	<key>FacebookDisplayName</key>
+	<string>GooogleSignOn</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
